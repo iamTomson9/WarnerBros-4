@@ -1,0 +1,833 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>KatBros</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+  <!-- Owl Carousel css-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+  <!-- Owl Carousel css-->
+
+
+  <!-- jquery css-->
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+  <!-- jquery css-->
+
+</head>
+
+<body>
+  <section class="home">
+    <div class="headerbg ">
+      <header>
+        <div class="container ">
+          <div class="navbar flex1">
+            <div class="logo">
+              <h2>KatBros</h2>
+            </div>
+
+            <nav>
+              <ul id="menuitem">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#movies">Movies</a></li>
+                <li><a href="#Tvshows">Tv Shows</a></li>
+                <li><a href="#Games">Games</a></li>
+                <li><a href="account.html">Collections</a></li>
+              </ul>
+            </nav>
+            <span class="fa fa-bars" onclick="menutoggle()"></span>
+
+          </div>
+        </div>
+      </header>
+
+      <div class="home_content mtop">
+        <div class="container">
+          <div class="left">
+            <h1>Avatar</h1>
+
+            <div class="time flex">
+              <label>R</label>
+              <i class="fas fa-circle"></i>
+              <span>1hrs 50mins</span>
+              <i class="fas fa-circle"></i>
+              <p>2009</p>
+              <i class="fas fa-circle"></i>
+              <button>Action</button>
+            </div>
+
+            <p>"Avatar" is a film about a human-operated alien hybrid, Jake Sully, who becomes torn between following his military mission to exploit the resources of the alien world Pandora and protecting its indigenous people, the Na'vi.
+            </p>
+            <div class="button flex">
+              <button class="btn">BUY</button>
+              <i id="palybtn" class="fas fa-play"><a href="https://www.youtube.com/watch?v=CM79GTEm2ps">Play</a></i>
+              <p>WATCH TRAILER</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <script>
+    var menuitem = document.getElementById("menuitem");
+    menuitem.style.maxHeight = "0px";
+
+    function menutoggle() {
+      if (menuitem.style.maxHeight == '0px') {
+        menuitem.style.maxHeight = "200px"
+      } else {
+        menuitem.style.maxHeight = "0px"
+      }
+    }
+
+    window.addEventListener("scroll", function() {
+      var header = document.querySelector("header");
+      header.classList.toggle("sticky", window.scrollY > 50);
+    })
+  </script>
+
+
+
+  <section class="popular mtop" id= "movies">
+    <div class="container ">
+      <div class="heading flex1">
+        <h2>Movies</h2>
+        <button>MORE MOVIES</button>
+      </div>
+
+      <div class="owl-carousel owl-theme">
+        <div class="item">
+          <div class="box">
+            <div class="imgBox">
+              <img src="image/p1.jpeg" alt="">
+              <div class="icon">
+                <i class="far fa-play" activate="true"></i>
+                <i class="fas fa-share-alt"></i>
+                <i class="fas fa-plus"></i>
+              </div>
+            </div>
+
+            <div class="content">
+              <i id="palybtn" class="fas fa-play"></i>
+            </div>
+            <div class="text">
+              <h3>Madden Weed</h3>
+              <div class="time flex">
+                <span>1hrs 50mins</span>
+                <i class="fas fa-circle"></i>
+                <a>Action</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="box">
+            <div class="imgBox">
+              <img src="image/p2.jpeg" alt="">
+              <div class="icon">
+                <i class="far fa-heart"></i>
+                <i class="fas fa-share-alt"></i>
+                <i class="fas fa-plus"></i>
+              </div>
+            </div>
+
+            <div class="content">
+              <i id="palybtn" class="fas fa-play"></i>
+            </div>
+            <div class="text">
+              <h3>Civil War</h3>
+              <div class="time flex">
+                <span>1hrs 50mins</span>
+                <i class="fas fa-circle"></i>
+                <a>Action</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="box">
+            <div class="imgBox">
+              <img src="image/p3.jpeg" alt="">
+              <div class="icon">
+                <i class="far fa-heart"></i>
+                <i class="fas fa-share-alt"></i>
+                <i class="fas fa-plus"></i>
+              </div>
+            </div>
+
+            <div class="content">
+              <i id="palybtn" class="fas fa-play"></i>
+            </div>
+            <div class="text">
+              <h3>Twisters</h3>
+              <div class="time flex">
+                <span>1hrs 50mins</span>
+                <i class="fas fa-circle"></i>
+                <a>Action</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="box">
+            <div class="imgBox">
+              <img src="image/p4.jpeg" alt="">
+              <div class="icon">
+                <i class="far fa-heart"></i>
+                <i class="fas fa-share-alt"></i>
+                <i class="fas fa-plus"></i>
+              </div>
+            </div>
+
+            <div class="content">
+              <i id="palybtn" class="fas fa-play"></i>
+            </div>
+            <div class="text">
+              <h3>Wonder Woman</h3>
+              <div class="time flex">
+                <span>1hrs 50mins</span>
+                <i class="fas fa-circle"></i>
+                <a>Action</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="box">
+            <div class="imgBox">
+              <img src="image/p5.jpeg" alt="">
+              <div class="icon">
+                <i class="far fa-heart"></i>
+                <i class="fas fa-share-alt"></i>
+                <i class="fas fa-plus"></i>
+              </div>
+            </div>
+
+            <div class="content">
+              <i id="palybtn" class="fas fa-play"></i>
+            </div>
+            <div class="text">
+              <h3>Dracular </h3>
+              <div class="time flex">
+                <span>1hrs 50mins</span>
+                <i class="fas fa-circle"></i>
+                <a>Action</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="box">
+            <div class="imgBox">
+              <img src="image/p6.jpeg" alt="">
+              <div class="icon">
+                <i class="far fa-heart"></i>
+                <i class="fas fa-share-alt"></i>
+                <i class="fas fa-plus"></i>
+              </div>
+            </div>
+
+            <div class="content">
+              <i id="palybtn" class="fas fa-play"></i>
+            </div>
+            <div class="text">
+              <h3>Come Together</h3>
+              <div class="time flex">
+                <span>1hrs 50mins</span>
+                <i class="fas fa-circle"></i>
+                <a>Action</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="box">
+            <div class="imgBox">
+              <img src="image/p7.jpg" alt="">
+              <div class="icon">
+                <i class="far fa-heart"></i>
+                <i class="fas fa-share-alt"></i>
+                <i class="fas fa-plus"></i>
+              </div>
+            </div>
+
+            <div class="content">
+              <i id="palybtn" class="fas fa-play"></i>
+            </div>
+            <div class="text">
+              <h3>Common Man's Idea</h3>
+              <div class="time flex">
+                <span>1hrs 50mins</span>
+                <i class="fas fa-circle"></i>
+                <a>Action</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="popular mtop" id="movies">
+    <div class="container ">
+      <div class="heading flex1">
+        <h2>Most Viewed</h2>
+        <button>MORE VIDEO</button>
+      </div>
+
+      <div class="owl-carousel owl-theme">
+        <div class="item">
+          <div class="box">
+            <div class="imgBox">
+              <img src="image/p7.jpg" alt="">
+              <div class="icon">
+                <i class="far fa-heart"></i>
+                <i class="fas fa-share-alt"></i>
+                <i class="fas fa-plus"></i>
+              </div>
+            </div>
+
+            <div class="content">
+              <i id="palybtn" class="fas fa-play"></i>
+            </div>
+            <div class="text">
+              <h3>My Generation</h3>
+              <div class="time flex">
+                <span>1hrs 50mins</span>
+                <i class="fas fa-circle"></i>
+                <a>Action</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="box">
+            <div class="imgBox">
+              <img src="image/p6.jpg" alt="">
+              <div class="icon">
+                <i class="far fa-heart"></i>
+                <i class="fas fa-share-alt"></i>
+                <i class="fas fa-plus"></i>
+              </div>
+            </div>
+
+            <div class="content">
+              <i id="palybtn" class="fas fa-play"></i>
+            </div>
+            <div class="text">
+              <h3>Machine War</h3>
+              <div class="time flex">
+                <span>1hrs 50mins</span>
+                <i class="fas fa-circle"></i>
+                <a>Action</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="box">
+            <div class="imgBox">
+              <img src="image/p5.jpg" alt="">
+              <div class="icon">
+                <i class="far fa-heart"></i>
+                <i class="fas fa-share-alt"></i>
+                <i class="fas fa-plus"></i>
+              </div>
+            </div>
+
+            <div class="content">
+              <i id="palybtn" class="fas fa-play"></i>
+            </div>
+            <div class="text">
+              <h3>Fight for Life</h3>
+              <div class="time flex">
+                <span>1hrs 50mins</span>
+                <i class="fas fa-circle"></i>
+                <a>Action</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="box">
+            <div class="imgBox">
+              <img src="image/p4.jpg" alt="">
+              <div class="icon">
+                <i class="far fa-heart"></i>
+                <i class="fas fa-share-alt"></i>
+                <i class="fas fa-plus"></i>
+              </div>
+            </div>
+
+            <div class="content">
+              <i id="palybtn" class="fas fa-play"></i>
+            </div>
+            <div class="text">
+              <h3>The Warrior Life</h3>
+              <div class="time flex">
+                <span>1hrs 50mins</span>
+                <i class="fas fa-circle"></i>
+                <a>Action</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="box">
+            <div class="imgBox">
+              <img src="image/p3.jpg" alt="">
+              <div class="icon">
+                <i class="far fa-heart"></i>
+                <i class="fas fa-share-alt"></i>
+                <i class="fas fa-plus"></i>
+              </div>
+            </div>
+
+            <div class="content">
+              <i id="palybtn" class="fas fa-play"></i>
+            </div>
+            <div class="text">
+              <h3>Skull Of Myths </h3>
+              <div class="time flex">
+                <span>1hrs 50mins</span>
+                <i class="fas fa-circle"></i>
+                <a>Action</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Owl Carousel -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"></script>
+  <!-- Owl Carousel -->
+
+  <script>
+    $('.owl-carousel').owlCarousel({
+      loop: true,
+      margin: 20,
+      nav: true,
+      dots: false,
+      responsive: {
+        411: {
+          items: 1
+        },
+        768: {
+          items: 2
+        },
+        1000: {
+          items: 4
+        }
+      }
+    })
+  </script>
+
+
+
+
+
+
+  <section class="new_realase top" id= "Tvshows">
+    <div class="container">
+      <div class="owl-carousel owl-carousel2 owl-theme">
+        <div class="items">
+          <div class="left">
+            <div class="img">
+              <img src="image/S1.jpeg" alt="">
+            </div>
+            <div class="heading">
+              <h2> <span></span> TV SHOWS</h2>
+              <h1>THE GENTLEMEN</h1>
+            </div>
+            <div class="time flex">
+              <label>R</label>
+              <i class="fas fa-circle"></i>
+              <span>Season 1</span>
+              <i class="fas fa-circle"></i>
+              <a class="flex1"><img src="https://img.icons8.com/color/95/000000/imdb.png"/> 8.5</a>
+              <i class="fas fa-circle"></i>
+              <p>2019</p>
+              <i class="fas fa-circle"></i>
+              <button>Action | Crime</button>
+            </div>
+
+            <p>"The Gentlemen" is a action crime Series. It follows a marijuana kingpin in London who decides to sell his empire.
+            </p>
+
+            <div class="button flex">
+              <button class="btn">PLAY NOW</button>
+              <i id="palybtn" class="fas fa-play"></i>
+              <p>WATCH TRAILER</p>
+            </div>
+          </div>
+        </div>
+        <div class="items">
+          <div class="left">
+            <div class="img">
+              <img src="image/S2.jpeg" alt="">
+            </div>
+            <div class="heading">
+              <h2> <span></span>TV SHOWS</h2>
+              <h1>FOOL ME ONCE</h1>
+            </div>
+            <div class="time flex">
+              <label>R</label>
+              <i class="fas fa-circle"></i>
+              <span>Season 1</span>
+              <i class="fas fa-circle"></i>
+              <a class="flex1"><img src="https://img.icons8.com/color/95/000000/imdb.png" /> 8.5</a>
+              <i class="fas fa-circle"></i>
+              <i class="fas fa-circle"></i>
+              <p>2016</p>
+              <i class="fas fa-circle"></i>
+              <button>Mystery</button>
+            </div>
+
+            <p>"Fool Me Once" is a series featuring standalone novels with intricate plots and unexpected twists.
+            </p>
+
+            <div class="button flex">
+              <button class="btn">PLAY NOW</button>
+              <i id="palybtn" class="fas fa-play"></i>
+              <p>WATCH TRAILER</p>
+            </div>
+          </div>
+        </div>
+        <div class="items">
+          <div class="left">
+            <div class="img">
+              <img src="image/S3.jpeg" alt="">
+            </div>
+            <div class="heading">
+              <h2> <span></span>TV SHOWS</h2>
+              <h1>THE STORY OF MOSES</h1>
+            </div>
+            <div class="time flex">
+              <label>R</label>
+              <i class="fas fa-circle"></i>
+              <span>Season 1</span>
+              <i class="fas fa-circle"></i>
+              <a class="flex1"><img src="https://img.icons8.com/color/95/000000/imdb.png" /> 8.5</a>
+              <i class="fas fa-circle"></i>
+              <p>2021</p>
+              <i class="fas fa-circle"></i>
+              <button>Religion</button>
+            </div>
+
+            <p>The Moses story in the Book of Exodus tells of his birth to Hebrew slaves in Egypt.
+            </p>
+
+            <div class="button flex">
+              <button class="btn">PLAY NOW</button>
+              <i id="palybtn" class="fas fa-play"></i>
+              <p>WATCH TRAILER</p>
+            </div>
+          </div>
+        </div>
+        <div class="items">
+          <div class="left">
+            <div class="img">
+              <img src="image/S4.jpeg" alt="">
+            </div>
+            <div class="heading">
+              <h2> <span></span>TV SHOWS</h2>
+              <h1>CAN I TELL YOU A SECRET</h1>
+            </div>
+            <div class="time flex">
+              <label>R</label>
+              <i class="fas fa-circle"></i>
+              <span>Season 1</span>
+              <i class="fas fa-circle"></i>
+              <a class="flex"><img src="https://img.icons8.com/color/95/000000/imdb.png" /> 8.5</a>
+              <i class="fas fa-circle"></i>
+              <p>2023</p>
+              <i class="fas fa-circle"></i>
+              <button>Mystery | Drama</button>
+            </div>
+
+            <p>The series follows a group of friends who share a dark secret from their past.
+            </p>
+
+            <div class="button flex">
+              <button class="btn">PLAY NOW</button>
+              <i id="palybtn" class="fas fa-play"></i>
+              <p>WATCH TRAILER</p>
+            </div>
+          </div>
+        </div>
+        <div class="items">
+          <div class="left">
+            <div class="img">
+              <img src="image/S5.jpeg" alt="">
+            </div>
+            <div class="heading">
+              <h2> <span></span>TV SHOWS</h2>
+              <h1>CRISELDA</h1>
+            </div>
+            <div class="time flex">
+              <label>R</label>
+              <i class="fas fa-circle"></i>
+              <span>Season 1</span>
+              <i class="fas fa-circle"></i>
+              <a class="flex1"><img src="https://img.icons8.com/color/95/000000/imdb.png" /> 8.5</a>
+              <i class="fas fa-circle"></i>
+              <p>2024</p>
+              <i class="fas fa-circle"></i>
+              <button>Mystery | Action | Thriller</button>
+            </div>
+
+            <p>"Criselda" is a mystery or thriller actioin series with Criselda as a detective or amateur sleuth solving complex cases or unraveling secrets in her community.
+            </p>
+
+            <div class="button flex">
+              <button class="btn">PLAY NOW</button>
+              <i id="palybtn" class="fas fa-play"></i>
+              <p>WATCH TRAILER</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    $('.owl-carousel2').owlCarousel({
+      loop: true,
+      margin: 20,
+      dots: true,
+      items: 1
+    })
+  </script>
+
+
+
+  <section class="popular mtop" id= "Games">
+    <div class="container ">
+      <div class="heading flex1">
+        <h2>Exclusive Games</h2>
+        <button>EXPOLRE MORE</button>
+      </div>
+
+      <div class="owl-carousel owl-theme">
+        <div class="item">
+          <div class="box">
+            <div class="imgBox">
+              <img src="image/G1.jpeg" alt="">
+              <div class="icon">
+                <i class="far fa-heart"></i>
+                <i class="fas fa-share-alt"></i>
+                <i class="fas fa-plus"></i>
+              </div>
+            </div>
+
+            <div class="content">
+              <i id="palybtn" class="fas fa-shopping-cart"></i>
+            </div>
+            <div class="text">
+              <h3>Fortnite</h3>
+              <div class="time flex">
+                <span>Multiplayer | Shooting</span>
+                <i class="fas fa-circle"></i>
+                <a>Action</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="box">
+            <div class="imgBox">
+              <img src="image/G2.jpeg" alt="">
+              <div class="icon">
+                <i class="far fa-heart"></i>
+                <i class="fas fa-share-alt"></i>
+                <i class="fas fa-plus"></i>
+              </div>
+            </div>
+
+            <div class="content">
+              <i id="palybtn" class="fas fa-shopping-cart"></i>
+            </div>
+            <div class="text">
+              <h3>PUBG</h3>
+              <div class="time flex">
+                <span>Multiplayer | Shooting</span>
+                <i class="fas fa-circle"></i>
+                <a>Action</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="box">
+            <div class="imgBox">
+              <img src="image/G3.jpeg" alt="">
+              <div class="icon">
+                <i class="far fa-heart"></i>
+                <i class="fas fa-share-alt"></i>
+                <i class="fas fa-plus"></i>
+              </div>
+            </div>
+
+            <div class="content">
+              <i id="palybtn" class="fas fa-shopping-cart"></i>
+            </div>
+            <div class="text">
+              <h3>Minecraft</h3>
+              <div class="time flex">
+                <span>Explore | Survival</span>
+                <i class="fas fa-circle"></i>
+                <a>Survival</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="box">
+            <div class="imgBox">
+              <img src="image/G4.jpeg" alt="">
+              <div class="icon">
+                <i class="far fa-heart"></i>
+                <i class="fas fa-share-alt"></i>
+                <i class="fas fa-plus"></i>
+              </div>
+            </div>
+
+            <div class="content">
+              <i id="palybtn" class="fas fa-shopping-cart"></i>
+            </div>
+            <div class="text">
+              <h3>The Sling Tomb</h3>
+              <div class="time flex">
+                <span>Arcade | SUrvival</span>
+                <i class="fas fa-circle"></i>
+                <a>Survival</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="box">
+            <div class="imgBox">
+              <img src="image/G5.jpeg" alt="">
+              <div class="icon">
+                <i class="far fa-heart"></i>
+                <i class="fas fa-share-alt"></i>
+                <i class="fas fa-plus"></i>
+              </div>
+            </div>
+
+            <div class="content">
+              <i id="palybtn" class="fas fa-shopping-cart"></i>
+            </div>
+            <div class="text">
+              <h3>The Solitare</h3>
+              <div class="time flex">
+                <span>Card | Puzzle</span>
+                <i class="fas fa-circle"></i>
+                <a>Card</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- paxi mate ko lai aata hai-->
+  <script>
+    $('.owl-carousel').owlCarousel({
+      loop: true,
+      margin: 20,
+      nav: true,
+      dots: false,
+      responsive: {
+        414: {
+          items: 1
+        },
+        600: {
+          items: 2
+        },
+        1000: {
+          items: 4
+        }
+      }
+    })
+  </script>
+
+
+
+  <footer>
+    <div class="container mtop">
+      <div class="box">
+        <div class="logo">
+          <h2>KatBros</h2>
+        </div>
+        <p>Entertainment</p>
+        <div class="icon">
+          <i class="fab fa-facebook-square"></i>
+          <i class="fab fa-instagram"></i>
+          <i class="fab fa-twitter-square"></i>
+          <i class="fab fa-youtube-square"></i>
+        </div>
+      </div>
+
+      <div class="box">
+        <h2>Explore</h2>
+        <div class="flex">
+          <ul>
+            <li>Home</li>
+            <li>Tv Shows</li>
+            <li>Actors</li>
+            <li>Celebrity</li>
+          </ul>
+          <ul class="ul">
+            <li>Movie</li>
+            <li>Video</li>
+            <li>Basketball</li>
+            <li>Coress</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="box ">
+        <h2>Company</h2>
+        <div class="flex">
+          <ul>
+            <li>Company</li>
+            <li>Terms of Use</li>
+            <li>Contact us</li>
+            <li>Our Team</li>
+          </ul>
+          <ul class="ul">
+            <li>Privacy Policy</li>
+            <li>Helps Center</li>
+            <li>Subscribe</li>
+            <li>FAQ</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="box">
+        <h2>Download App</h2>
+        <p> Entertainment website</p>
+        <div class="img flex1">
+          <img src="image/app1.png" alt="">
+          <img src="image/app2.png" alt="">
+        </div>
+      </div>
+    </div>
+    <p class="legal">Copyright (c) 2024 Copyright Holder All Rights Reserved | This Website is made By <i class="fas fa-heart"></i>God1stDeveloper</p>
+  </footer>
+</body>
+
+</html>
